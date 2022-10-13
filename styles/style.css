@@ -12,7 +12,7 @@ background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 
 nav,
 aside,
 main{
-  border: 2px solid blueviolet;
+  /*border: 2px solid blueviolet;*/
 }
 img{
   width: 40px;
@@ -21,20 +21,126 @@ img{
   height: 100vh;
   display: grid;
   grid-template-columns: repeat(6,1fr);
-  gap: 0.5rem;
+  grid-template-rows: repeat(6,1fr);
+  /*gap: 0.5rem;*/
 }
 .navbar{
+  border-radius: 1rem;
   grid-column: 2/-1;
   background: linear-gradient(45deg, lightblue, lightpink);
 }
 .sidebar{
   background: linear-gradient(45deg, lightblue, lightpink);
-  grid-row: 1/-7;
+  grid-row: 1/7;
 }
 .content{
   grid-column: 2/-1;
   grid-row: -6/-1;
 }
-/*/*//*/*/
+/*<-- Section-top Navbar  Start -->*/
 .section-top{
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  align-items: center;
+  gap: 2rem;
 }
+.section-top a,
+.section-top input{
+  transition: all 0.5s;
+}
+.left{
+  display: flex;
+  gap: 2rem;
+  margin-top: 1rem;
+  margin-left: 4rem;
+}
+.right{
+  transition: all 0.5s;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-right: 4rem;
+  margin-top: 1rem;
+}
+.right div{
+  font-size: 3rem;
+}
+input{
+  width: 70rem;
+  outline: none;
+  border: none;
+  border-radius: 2rem;
+  background-color: slategray;
+  color: white;
+  padding: 0.5rem;
+}
+input:focus{
+  background: linear-gradient(45deg, lightgray, #94a3b8);
+  color: black;
+  transform: scale(1.075);
+  border: 0.2rem solid darkgrey;
+}
+input:hover{
+  transform: scale(1.075);
+}
+.section-top a:hover{
+  transform: scale(1.2);
+}
+/*<-- Section-top Navbar  End -->*/
+
+/*<-- Section-bot Navbar  Start -->*/
+.section-bot{
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  align-items: center;
+}
+.profile{
+  position: relative;
+  display: grid;
+  grid-template-columns: 40px max-content;
+  margin-left: 4rem;
+}
+.greeting{
+  margin-left: 9rem;
+  font-size: 3rem;
+  grid-column: 2/4;
+
+}
+.profile-name{
+  margin-left: 9rem;
+  font-size: 3.2rem;
+  grid-column: 2/4;
+}
+.profile img{
+  width: 10rem;
+  position: absolute;
+}
+.buttons{
+  margin-right: 6rem;
+  display: flex;
+  gap: 2rem;
+}
+.buttons button{
+  outline: none;
+  border: 0.2rem solid lightblue;
+  border-radius: 1rem;
+  width: 10rem;
+  height: 5rem;
+  font-size: 2rem;
+  font-weight: bold;
+  background-color: #bfdbfe;
+  transition: all 0.5s;
+}
+.buttons button:hover {
+  background-color: #99f6e4;
+  transform: scale(1.1);
+}
+
+.buttons button:active {
+  border: 0.2rem solid lightblue;
+  background-color:#99f6e4;
+  box-shadow: 0 1rem #99f6e4;
+  transform: translateY(1rem);
+}
+/*<-- Section-bot Navbar  End -->*/

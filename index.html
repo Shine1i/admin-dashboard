@@ -1,33 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="styles/style.css">
-	<title>Admin Dashboard</title>
-</head>
-<body>
-	<div class="grid-container">
-		<nav class="navbar">
-			<section class="section-top">
-				<img src="/images/zoom.png" alt="search-icon">
-				<input type="search">
-				<img src="/images/notification.png" alt="notification">
-				<img src="/images/profile.png" alt="profile-picture">
-				<i>Morgan Freeman</i>
-			</section>
-			<section class="section-bot">
-				<img src="/images/profile.png" alt="profile picture">
-				<i>Hi, There <br> <strong>Morgan Freeman (@Morgan)</strong></i>
-				<div class="buttons">
-					<button class="button">New</button>
-					<button class="button">Upload</button>
-					<button class="button">Share</button>
-				</div>
-			</section>
-		</nav>
-		<aside class="sidebar"></aside>
-		<main class="content"></main>
-	</div>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styles/style.css" />
+		<title>Admin Dashboard</title>
+	</head>
+	<body>
+		<div class="grid-container">
+			<nav class="navbar">
+				<section class="section-top">
+					<div class="left">
+						<a href="#"><img src="/images/zoom.png" alt="search-icon" /></a>
+
+						<input type="search" />
+					</div>
+
+					<div class="right">
+						<a href="#"
+							><img src="/images/notification.png" alt="notification" /></a
+						><a href="#"
+							><img src="/images/profile.png" alt="profile-picture"
+						/></a>
+
+						<div><strong>Morgan Freeman</strong></div>
+					</div>
+				</section>
+				<section class="section-bot">
+					
+					<div class="profile">
+						<img src="/images/profile.png" alt="profile picture" />
+						<p class="greeting">Hi there,</p>
+						<p class="profile-name"><strong>Morgan Freeman (@Morgan)</strong></p>
+						
+					</div>
+					<div class="buttons">
+						<button class="button">New</button>
+						<button class="button">Upload</button>
+						<button class="button">Share</button>
+					</div>
+				</section>
+			</nav>
+			<aside class="sidebar">
+				<h2>Dashboard</h2>
+				<div class="categories"></div>
+			</aside>
+			<main class="content"></main>
+		</div>
+	</body>
 </html>
