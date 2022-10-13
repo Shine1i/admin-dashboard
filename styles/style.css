@@ -6,25 +6,35 @@
 }
 body{
   font-size: 1.6rem;
+  background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
 }
 nav,
 aside,
 main{
   border: 2px solid blueviolet;
 }
+img{
+  width: 40px;
+}
 .grid-container{
   height: 100vh;
   display: grid;
-  grid-template-columns: repeat(5,1fr);
+  grid-template-columns: repeat(6,1fr);
   gap: 0.5rem;
 }
 .navbar{
   grid-column: 2/-1;
+  background: linear-gradient(45deg, lightblue, lightpink);
 }
 .sidebar{
+  background: linear-gradient(45deg, lightblue, lightpink);
   grid-row: 1/-7;
 }
 .content{
   grid-column: 2/-1;
   grid-row: -6/-1;
+}
+/*/*//*/*/
+.section-top{
 }
