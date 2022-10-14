@@ -1,51 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="styles/style.css" />
-		<title>Admin Dashboard</title>
-	</head>
-	<body>
-		<div class="grid-container">
-			<nav class="navbar">
-				<section class="section-top">
-					<div class="left">
-						<a href="#"><img src="/images/search.png" alt="search-icon" /></a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Admin Dashboard</title>
+  </head>
+  <body>
+    <div class="grid-container">
+      <nav class="navbar">
+        <section class="section-top">
+          <div class="left">
+            <a href="#"><img src="/images/search.png" alt="search-icon" /></a>
 
-						<input type="search" />
-					</div>
+            <input type="search" />
+          </div>
 
-					<div class="right">
-						<a href="#"
-							><img src="/images/notification.png" alt="notification" /></a
-						><a href="#"
-							><img src="/images/profile.png" alt="profile-picture"
-						/></a>
+          <div class="right">
+            <a href="#"
+              ><img src="/images/notification.png" alt="notification" /></a
+            ><a href="#"
+              ><img src="/images/profile.png" alt="profile-picture"
+            /></a>
 
-						<div><strong>Morgan Freeman</strong></div>
-					</div>
-				</section>
-				<section class="section-bot">
-					
-					<div class="profile">
-						<img src="/images/profile.png" alt="profile picture" />
-						<p class="greeting">Hi there,</p>
-						<p class="profile-name"><strong>Morgan Freeman (@Morgan)</strong></p>
-						
-					</div>
-					<div class="buttons">
-						<button class="button">New</button>
-						<button class="button">Upload</button>
-						<button class="button">Share</button>
-					</div>
-				</section>
-			</nav>
-			<aside class="sidebar">
-				<h2>Dashboard</h2>
-				<div class="categories"></div>
-			</aside>
-			<main class="content"></main>
-		</div>
-	</body>
+            <div><strong>Morgan Freeman</strong></div>
+          </div>
+        </section>
+        <section class="section-bot">
+          <div class="profile">
+            <img src="/images/profile.png" alt="profile picture" />
+            <p class="greeting">Hi there,</p>
+            <p class="profile-name">
+              <strong>Morgan Freeman (@Morgan)</strong>
+            </p>
+          </div>
+          <div class="buttons">
+            <button class="button">New</button>
+            <button class="button">Upload</button>
+            <button class="button">Share</button>
+          </div>
+        </section>
+      </nav>
+      <aside class="sidebar">
+        <img
+          src="images/startup.png"
+          alt="logo"
+          style="width: 6rem; margin-top: 0.5rem; margin-left: 1rem"
+        />
+        <h2>Dashboard</h2>
+        <section class="icons">
+          <a href="#"><img src="images/home.png" alt="" /></a>
+          <a href="#"><img src="images/profilecard.png" alt="" /></a>
+          <a href="#"><img src="images/email.png" alt="" /></a>
+          <a href="#"><img src="images/history.png" alt="" /></a>
+          <a href="#"><img src="images/clipboard.png" alt="" /></a>
+
+          <div class="sub-section">
+            <a href="#"><img src="images/settings.png" alt="" /></a>
+            <a href="#"><img src="images/support.png" alt="" /></a>
+            <a href="#"><img src="images/shield.png" alt="" /></a>
+          </div>
+        </section>
+        <section class="categories">
+          <a href="#"><div class="categori">Home</div></a>
+          <a href="#"><div class="categori">Profile</div></a>
+          <a href="#"><div class="categori">Messages</div></a>
+          <a href="#"><div class="categori">History</div></a>
+          <a href="#"><div class="categori">Tasks</div></a>
+
+          <div class="sub-section">
+            <a href="#"> <div class="categori">Settings</div></a>
+            <a href="#"> <div class="categori">Support</div></a>
+            <a href="#"><div class="categori">Privacy</div></a>
+          </div>
+        </section>
+      </aside>
+      <main class="content"></main>
+    </div>
+  </body>
 </html>
