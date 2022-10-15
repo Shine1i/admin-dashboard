@@ -2,11 +2,15 @@
 
 :root {
   font-size: 62.5%;
+  --avatar1: url(https://mir-s3-cdn-cf.behance.net/project_modules/disp/06fbe298931623.5ee79b6a90221.jpg);
+  --avatar2: url(https://mir-s3-cdn-cf.behance.net/project_modules/disp/2e80bb98931623.5ee79b6a8f342.jpg);
+  --avatar3: url(https://mir-s3-cdn-cf.behance.net/project_modules/disp/8394f798931623.5ee79b6a909ea.jpg);
+  --avatar4: url(https://mir-s3-cdn-cf.behance.net/project_modules/disp/baa20698931623.5ee79b6a8ec2b.jpg);
 }
 @font-face {
   font-family: "Helvetica";
-  src: url("/fonts/Helvetica.woff2") format("woff2"),
-    url("/fonts/Helvetica.woff") format("woff");
+  src: url("../fonts/Helvetica.woff2") format("woff2"),
+    url("../fonts/Helvetica.woff") format("woff");
 }
 body {
   font-family: helvetica;
@@ -261,5 +265,48 @@ h3{
   font-size: 3rem;
   top: 19.5rem;
   color: darkslategray;
+}
+.card-text{
+  font-size: 1rem;
+  font-weight: 550;
+
+}
+.card-text:nth-child(2),
+.card-text:nth-child(4)
+{
+  border-bottom: 0.1rem solid gray;
+}
+.card-title{
+  font-weight: 600;
+}
+.under{
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 10rem 1fr;
+
+}
+.avatars{
+  display: grid;
+  gap: 1rem;
+  justify-content: center;
+  margin-right: 2rem;
+}
+.friend{
+  text-align: left;
+  margin-top: 0.5rem;
+}
+.friends{
+  font-size: 1.6rem;
+  display: grid;
+  gap: 1.6rem;
+}
+.avatars>img{
+  width: 6.5rem;
+  border-radius: 50%;
+}
+.under h3{
+  position: absolute;
+  top: -3.8rem;
+  right: 19rem;
 }
 /*<-- Main  End -->*/
